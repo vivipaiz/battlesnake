@@ -21,8 +21,8 @@ fun decideMove(request: MoveRequest): Direction {
         val boardWidth = request.board.width
         val boardHeight = request.board.height
 
-        newPosition.x != boardHeight
-        newPosition.y != boardWidth
+        newPosition.y != boardHeight
+        newPosition.x != boardWidth
 
         // TODO: Step 2 - Don't hit yourself.
         // Use information in the request to prevent your Battlesnake from colliding with itself.
