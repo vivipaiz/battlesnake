@@ -34,11 +34,19 @@ fun decideMove(request: MoveRequest): Direction {
 
         // TODO: Step 3 - Don't collide with others.
         // Use information in the request to prevent your Battlesnake from colliding with others.
+        var notCollideWithOtherSnake = true
+
+        for (otherSnake in request.board.snakes) {
+            if (otherSnake.body.contains(newPosition)) {
+                notCollideWithOtherSnake = false
+                break
+            }
+        }
 
         // TODO: Step 4 - Find food.
         // Use information in the request to seek out and find food.
 
-        positionInsideBoard && isNeck && notCollisionWithITself
+        positionInsideBoard && isNeck && notCollisionWithITself && notCollideWithOtherSnake
     }
 
     // Finally, choose a move from the available safe moves.
