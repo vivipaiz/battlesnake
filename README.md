@@ -5,7 +5,7 @@ To start, it is recommended that you first read the [Quick Start guide](https://
 Then, you can open up Battlesnake.kt, and change some values that are marked with comments. Lastly, you can write your movement logic in Logic.kt.
 Good luck with writing your first Battlesnake!
 
-## Customizing your snake
+## Customizing your snake 
 You can customize your snake in `customizations.json`.
 For example, if I wanted the `iguana` head and tail, and I would want a red snake, my `customizations.json` would look like this:
 ```json
